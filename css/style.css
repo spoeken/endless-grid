@@ -83,5 +83,5 @@ body::-webkit-scrollbar,
   line-height: 300px;
 }
 .wrap .rect:hover {
-  background: inherit, rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 150px rgba(255, 255, 255, 0.6);
 }
