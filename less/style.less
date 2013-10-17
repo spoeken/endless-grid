@@ -50,33 +50,35 @@ html, body, .container {
 	width: @rectWidth*10;
 	height: @rectWidth*10;
 	position: absolute;
+	&#w1 {
+		background: #105B63;
+	}
 	&#w2 {
 		margin-top: -@rectWidth*10;
-		.rect{background: red;}
+		.rect{background: #F4FFBE;}
 	}
 	&#w3 {
 		margin-left: -@rectWidth*10;
-		.rect{background: blue;}
+		.rect{background: #FFD34E;}
 	}
 	&#w4 {
 		margin-left: -@rectWidth*10;
 		margin-top: -@rectWidth*10;
-		.rect{background: green;}
+		.rect{background: #DB7004;}
 	}
 	
-}
-
-.rect {
-	width: @rectWidth;
-	height: @rectWidth;
-	border: 1px solid #fafafa;
-	float: left;
-	box-sizing:border-box;
-	-moz-box-sizing:border-box; /* Firefox */
-	text-align: center;
-	line-height: @rectWidth;
-	&:hover {
-		background: #fafafa;
-	}
+	.rect {
+		width: @rectWidth;
+		height: @rectWidth;
+		border: 1px solid #fafafa;
+		float: left;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; /* Firefox */
+		text-align: center;
+		line-height: @rectWidth;
+		&:hover {
+			background: inherit, rgba(0,0,0,0.2);
+		}
+	}	
 }
 

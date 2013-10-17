@@ -48,26 +48,29 @@ body::-webkit-scrollbar,
   height: 3000px;
   position: absolute;
 }
+.wrap#w1 {
+  background: #105B63;
+}
 .wrap#w2 {
   margin-top: -3000px;
 }
 .wrap#w2 .rect {
-  background: red;
+  background: #F4FFBE;
 }
 .wrap#w3 {
   margin-left: -3000px;
 }
 .wrap#w3 .rect {
-  background: blue;
+  background: #FFD34E;
 }
 .wrap#w4 {
   margin-left: -3000px;
   margin-top: -3000px;
 }
 .wrap#w4 .rect {
-  background: green;
+  background: #DB7004;
 }
-.rect {
+.wrap .rect {
   width: 300px;
   height: 300px;
   border: 1px solid #fafafa;
@@ -79,6 +82,6 @@ body::-webkit-scrollbar,
   text-align: center;
   line-height: 300px;
 }
-.rect:hover {
-  background: #fafafa;
+.wrap .rect:hover {
+  background: inherit, rgba(0, 0, 0, 0.2);
 }
